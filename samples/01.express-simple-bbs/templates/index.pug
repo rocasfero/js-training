@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body
+    h1 Simple BBS
+
+    form(action="/" method="post")
+      p input your name
+      input(name="name")
+      p input your comment
+      textarea(name="comment", cols="30", rows="10")
+      br
+      button(type="submit") submit
+
+    hr
+
+    each comment in comments
+      h3 name
+      p #{comment.name}
+      h3 comment
+      p #{comment.comment}
+      h3 postedAt
+      p #{comment.postedAt}
+      hr

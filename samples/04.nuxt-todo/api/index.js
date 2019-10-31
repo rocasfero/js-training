@@ -30,7 +30,7 @@ app.get('/todos', (req, res) => {
 
 app.post('/todos', [titleChecker()], (req, res) => {
   try {
-    const todo = todoManager.push(req.body.title);
+    const todo = todoManager.create(req.body.title);
 
     res.json(todo);
   } catch (error) {

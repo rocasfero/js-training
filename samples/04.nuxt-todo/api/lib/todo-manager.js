@@ -60,7 +60,7 @@ export default class TodoManager {
     return true;
   }
 
-  push(title) {
+  create(title) {
     const todo = {
       id: ++this.index,
       title: title

@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nodemon --watch api --exec nuxt",
     "start": "nuxt start"
   },
   "dependencies": {
@@ -15,5 +15,8 @@
     "http-errors": "^1.7.3",
     "morgan": "^1.9.1",
     "nuxt": "^2.10.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
